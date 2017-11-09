@@ -40,6 +40,27 @@ public class Country {
     // 1 for each instance variable, with this special TRANSLATING:
     // - only the first 15 characters of name are returned
 
+    String getCode() {
+        return code;
+    }
+
+    String getName() {
+        if (name.length() > 16) {
+            return name.substring(0, 16);
+        }
+        else {
+            return name;
+        }
+    }
+
+    int getArea() {
+        return area;
+    }
+
+    int getPopulation() {
+        return population;
+    }
+
 
     // CONSTRUCTOR METHODS
     // not needed - "default constructor" automatically included
