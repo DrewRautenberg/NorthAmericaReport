@@ -58,6 +58,11 @@ public class NorthAmericaReport {
         // Write to FILE.  Use toString method (in Country class) to produce a
         //      detail line.  (No header lines needed).
 
+        PrintWriter outFile = new PrintWriter("NorthAmericaReport.txt");
+        for (int j=0;j<n;j++){
+            outFile.println(countries[j].toString());
+        }
+        outFile.close();
 
         System.out.println("See NorthAmericaReport.txt file in project folder");
     }

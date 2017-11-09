@@ -73,7 +73,7 @@ public class Country {
     //      - 2 alphabetic fields are left-justified
 
     public String toString() {
-        return String.format("Code: %s Name: %-17s Area: %f Population: %f",
+        return String.format("Code: %s Name: %-17s Area: %,9d Population: %,11d\r\n",
                 getCode(), getName(), getArea(), getPopulation());
     }
 }
