@@ -61,7 +61,6 @@ public class Country {
         return population;
     }
 
-
     // CONSTRUCTOR METHODS
     // not needed - "default constructor" automatically included
 
@@ -73,5 +72,8 @@ public class Country {
     //      - 2 numeric fields are right-justified with embedded commas
     //      - 2 alphabetic fields are left-justified
 
-
+    public String toString() {
+        return String.format("Code: %s Name: %-17s Area: %f Population: %f",
+                getCode(), getName(), getArea(), getPopulation());
+    }
 }

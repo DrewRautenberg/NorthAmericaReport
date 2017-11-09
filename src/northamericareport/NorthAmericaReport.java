@@ -17,7 +17,7 @@ import java.util.Scanner;
 public class NorthAmericaReport {
 
     public static void main(String[] args) throws IOException {
-        //-------------------------------------------------------- DECLARATIONS
+        // DECLARATIONS
         final int MAX_N = 100;
         int n = 0;
         String record;
@@ -28,7 +28,7 @@ public class NorthAmericaReport {
 
 
 
-        //-------------------------------------- FILL ARRAY WITH DATA FROM FILE
+        // FILL ARRAY WITH DATA FROM FILE
         File theFile = new File("CountryData.csv");
         Scanner inFile = new Scanner(theFile);
 
@@ -54,7 +54,7 @@ public class NorthAmericaReport {
         n = i;
         System.out.printf("FYI: n is %d\n\n", n);
         inFile.close();
-        //---------------------------------------- WRITE REPORT FROM ARRAY DATA
+        // WRITE REPORT FROM ARRAY DATA
         // Write to FILE.  Use toString method (in Country class) to produce a
         //      detail line.  (No header lines needed).
 
