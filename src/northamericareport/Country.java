@@ -45,8 +45,8 @@ public class Country {
     }
 
     String getName() {
-        if (name.length() > 16) {
-            return name.substring(0, 16);
+        if (name.length() > 15) {
+            return name.substring(0, 15);
         }
         else {
             return name;
